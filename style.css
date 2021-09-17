@@ -1,0 +1,43 @@
+li{
+    list-style:none;
+    padding: 5px;
+    margin-right: 0px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #000000;
+    border-radius: .3rem;
+    color: white;
+    text-align: center;
+  }
+
+footer{
+    position:fixed; 
+    bottom:0; 
+    height:auto; 
+    margin-top:40px;
+    width:100%; 
+    height: 30px;
+    text-align:center;
+    background-color: #000000;
+    color: white;
+    
+}
+
+.divPregunta{
+    border-style: solid;
+    border-radius: 0px 20px 0px 20px;
+    border-color: orange;
+    border-width: 2px;
+    background-color: black;
+    color: orange;
+    padding : 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+label{
+    margin-left: 10px;
+}

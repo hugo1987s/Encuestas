@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <title>Encuestas - UTN - LTE</title>
+</head>
+<body>
+  
+    <header class="jumbotron">
+        <h1>Test de Liderazgo</h1>
+        <h5>Con las siguientes preguntas podrás determinar cuan cerca estás de ser un lider nato</h2>
+    </header>
+      <div class="container">
+    <section>
+            <div class="divPregunta">
+            <h3>A la hora de organizar equipos (de trabajo, amigos, etcétera)…</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="A" value="1" id="preg1" class="form-check-input"/>
+                    <label for="preg1">Intento quitarme de en medio para que lo haga otro.</label>
+                    
+                </li> 
+                <li>
+                    <input type="radio" name="A" value="2" id="preg2" class="form-check-input"/>
+                    <label for="preg2"> Me gusta y creo que se me da bien.</label>
+                </li>
+                <li>
+                    <input type="radio" name="A" value="3" id="preg3" class="form-check-input">  
+                    <label for="preg3">Participo en lo que pueda, pero siempre contando con alguna otra persona. </label>
+                </li>
+                </ul>
+            </div>
+                <h3>Cuando tengo que hablar en público (en el trabajo, una fiesta…)</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="B" value="3" class="form-check-input"> En general no me importa y me siento cómodo.
+                </li> 
+                <li>
+                    <input type="radio" name="B" value="1" class="form-check-input"> Lo evito por todos los medios.
+                </li>
+                <li>
+                    <input type="radio" name="B" value="2" class="form-check-input"> Cuando hay que hacerlo lo hago, pero no es algo que me guste.
+                </li>
+                </ul>
+            
+                <h3>Cuando estoy en un grupo o reunido con otras personas</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="C" value="3" class="form-check-input"> Me siento muy incómodo.
+                </li> 
+                <li>
+                    <input type="radio" name="C" value="1" class="form-check-input"> Estoy bien,pero prefiero pasar por desapercibido
+                </li>
+                <li>
+                    <input type="radio" name="C" value="2" class="form-check-input"> Me encuentro muy a gusto y me divierto bastante.
+                </li>
+                </ul>
+
+                <h3>A la hora de exponer diferentes puntos de vista</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="D" value="3" class="form-check-input"> Prefiero callarme y escuchar al resto.
+                </li> 
+                <li>
+                    <input type="radio" name="D" value="1" class="form-check-input"> Me gusta exponer el mío para ver si así proporciono una nueva visión al grupo.
+                </li>
+                <li>
+                    <input type="radio" name="D" value="2" class="form-check-input"> Si algo me parece realmente importante entonces sí digo mi opinión.
+                </li>
+                </ul>
+
+            
+                <h3>Cuando hago planes con amigos…</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="E" value="3" class="form-check-input"> Me adapto a lo que me digan.
+                </li> 
+                <li>
+                    <input type="radio" name="E" value="1" class="form-check-input"> Reconozco que casi siempre hacemos lo que quiero yo.
+                </li>
+                <li>
+                    <input type="radio" name="E" value="2" class="form-check-input"> Suelo decir mis preferencias, pero frecuentemente hacemos la de otro.
+                </li>
+                </ul>
+    
+
+                <h3>Si tengo que organizar un equipo de trabajo…</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="F" value="3" class="form-check-input"> Dejo que cada uno elija lo que quiere hacer y lo que sobre lo hago yo.
+                </li> 
+                <li>
+                    <input type="radio" name="F" value="1" class="form-check-input"> Reparto tareas según se ha hecho en ocasiones anteriores.
+                </li>
+                <li>
+                    <input type="radio" name="F" value="2" class="form-check-input"> Me gusta conocer bien los recursos humanos que tengo para poder asignar a cada uno el trabajo más adecuado a su perfil.
+                </li>
+                </ul>
+
+
+                <h3>En el café o en una charla…</h3>
+                <ul>
+                <li>
+                    <input type="radio" name="G" value="3" class="form-check-input"> Reconozco que monopolizo la conversación contando experiencias personales.
+                </li> 
+                <li>
+                    <input type="radio" name="G" value="1" class="form-check-input"> Cuando me dejan o procede cuento alguna cosa de vez en cuando.
+                </li>
+                <li>
+                    <input type="radio" name="G" value="2" class="form-check-input"> Puedo irme y es posible que ni se enteren.
+                </li>
+                </ul>
+
+                <div class="text-center">
+                    <br>
+                    <button onclick="Calcular()" class="btn btn-primary">Calcular Resultados</button>
+                 
+                </div>
+               
+                <br>
+                <br>
+                <h3 id="headingResults"></h3>
+                
+                <h6 id="lblResultado"></h6>
+   
+            </section>
+</div>
+    <footer>
+            © 2021 Copyright: UTN - LTE
+    </footer>   
+</body>
+
+    <script src="index.js"></script>
+</html>
