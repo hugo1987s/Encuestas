@@ -34,6 +34,9 @@ function Calcular()
         return;
      }
 
+     var divRes = document.getElementById("divResultado")
+     divRes.style.display = 'block';
+
      var txtResultado = document.getElementById("lblResultado");
      var txtHeading = document.getElementById("headingResults")
 
@@ -52,5 +55,38 @@ function Calcular()
             txtHeading.innerHTML = headingLiderNato
             txtResultado.innerHTML = liderNato;
         }
-    
+        ToBottom();
+}
+
+function ToBottom()
+{
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
+function Reset()
+{
+    ToTop();
+    HideDivResultado();
+    ClearRadios();
+
+}
+
+function ToTop()
+{
+    window.scroll(0,0);
+}
+
+function HideDivResultado()
+{
+    var divRes = document.getElementById("divResultado");
+    divRes.style.display = 'none'; 
+}
+
+function ClearRadios()
+{
+    var radios = document.getElementsByClassName("form-check-input");
+   
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].checked = false;
+    }
 }
