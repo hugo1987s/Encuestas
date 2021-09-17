@@ -9,6 +9,17 @@ var headingLiderNato = "Jefe de equipo"
 var cotaPocoLider = 7;
 var cotaMedioLider = 14;
 
+window.onload = function() {
+    HideDivResultado()
+    var radios = document.getElementsByClassName("form-check-input");
+
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener("click", function(){ HideDivResultado(); }); 
+     }
+  };
+
+
+
 function Calcular()
 {
     var radios = document.getElementsByClassName("form-check-input");
@@ -17,15 +28,11 @@ function Calcular()
     var cantidadPreguntas = 7;
 
     for (var i = 0; i < radios.length; i++) {
-  
-        
         if(radios.item(i).checked)
          {
              cantidadElegidos++;
              sumatoria += parseInt(radios.item(i).value);
          }  
-
-
      }
 
      if(cantidadElegidos != cantidadPreguntas)
@@ -66,14 +73,19 @@ function ToBottom()
 function Reset()
 {
     ToTop();
-    HideDivResultado();
+    //HideDivResultado();
     ClearRadios();
 
 }
 
 function ToTop()
 {
-    window.scroll(0,0);
+    //window.scroll(0,0);
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
 }
 
 function HideDivResultado()
