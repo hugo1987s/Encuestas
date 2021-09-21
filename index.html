@@ -7,7 +7,7 @@
      <!-- Bootstrap CSS -->
      
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
      <title>Encuestas - UTN - LTE</title>
 </head>
 <body>
@@ -143,7 +143,7 @@
             </div>
                 <div class="text-center">
                     <br>
-                    <button onclick="Calcular()" class="btn btn-primary">Calcular Resultados</button>
+                    <button onclick="Validar()" class="btn btn-primary">Calcular Resultados</button>
                     <button onclick="Reset()" class="btn btn-secondary">Reiniciar encuesta</button>
                 </div>
                
@@ -153,6 +153,16 @@
                     <h3 id="headingResults"></h3>
                 
                     <h6 id="lblResultado"></h6>
+
+                    <h6>Coloca tu nombre y dirección de email, y te enviaremos los resultados!</h6>
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" required>
+
+                    <label for="txtEmail">Email</label>
+                    <input type="email" name="txtEmail" id="txtEmail" required>
+
+                    <button onclick="Calcular()" class="btn btn-success">Enviar!</button>
+
                 </div>
           
    
@@ -164,4 +174,5 @@
 </body>
 
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>

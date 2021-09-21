@@ -9,6 +9,8 @@ var headingLiderNato = "Jefe de equipo"
 var cotaPocoLider = 7;
 var cotaMedioLider = 14;
 
+
+
 window.onload = function() {
     HideDivResultado()
     var radios = document.getElementsByClassName("form-check-input");
@@ -18,9 +20,7 @@ window.onload = function() {
      }
   };
 
-
-
-function Calcular()
+function Validar()
 {
     var radios = document.getElementsByClassName("form-check-input");
     var cantidadElegidos = 0;
@@ -44,24 +44,53 @@ function Calcular()
      var divRes = document.getElementById("divResultado")
      divRes.style.display = 'block';
 
-     var txtResultado = document.getElementById("lblResultado");
-     var txtHeading = document.getElementById("headingResults")
+     ToBottom();
+}
+
+
+function Calcular()
+{
+    var radios = document.getElementsByClassName("form-check-input");
+    var cantidadElegidos = 0;
+    var sumatoria = 0;
+    var resultHeader = "";
+    var resultText = "";
+
+    for (var i = 0; i < radios.length; i++) {
+        if(radios.item(i).checked)
+         {
+             cantidadElegidos++;
+             sumatoria += parseInt(radios.item(i).value);
+         }  
+     }
 
      if(sumatoria <= cotaPocoLider){
-         txtHeading.innerHTML = headingPocoLider
-        txtResultado.innerHTML = pocoLider;
+        resultHeader = headingPocoLider
+        resultText = pocoLider
      }
         
      else if (sumatoria <= cotaMedioLider)
         {
-            txtHeading.innerHTML = headingMedioLider
-            txtResultado.innerHTML = medioLider;
+            resultHeader = headingMedioLider
+            resultText = medioLider
         }
      else
         {
-            txtHeading.innerHTML = headingLiderNato
-            txtResultado.innerHTML = liderNato;
+            resultHeader = headingLiderNato
+            resultText = liderNato
         }
+
+        var nombre = document.getElementById("txtNombre").value;
+
+        var htmlBody = `<h1>¡Enhorabuena ${nombre}!</h1>
+                <p>Has finalizado el test de Liderazgo y aquí te presentaremos los resultados</p>
+                <h3>${resultHeader}</h3>
+                <p>${resultText}</p>
+                <br>
+                <p>Muchas gracias por utilizar nuestro servicio!<br> Atte. El equipo de UTN - LTE</p>`;
+
+        EnviarEmail(htmlBody);
+
         ToBottom();
 }
 
@@ -101,4 +130,25 @@ function ClearRadios()
     for (var i = 0; i < radios.length; i++) {
         radios[i].checked = false;
     }
+}
+
+
+
+
+function EnviarEmail(body)
+{
+    var emailTo = document.getElementById("txtEmail").value;
+
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "megafonomailer",
+        Password : "IvoVirginia2017",
+        To : emailTo,
+        From : "megafonomailer@gmail.com",
+        Subject : "Resultados del test de Liderazgo",
+        Body : body
+    }).then(
+      message => alert("Resultado enviado")
+    );
+
 }
