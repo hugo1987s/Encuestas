@@ -91,6 +91,28 @@ function Calcular(nombreTest) {
     ToBottom();
 }
 
+function GetResultTrabajo(sumatoria)
+{
+    var resultHeader = "";
+    var resultText = "";
+
+    if (sumatoria <= 20) {
+        resultHeader = "Debe conocer un poco más a su equipo"
+        resultText = `Su puntaje ha sido de ${sumatoria} lo que indica que usted requiere no solo mayor información, sino recibir amplia capacitación y desarrollo de habilidades que le permitan aprender a trabajar en equipo, parece tener la idea de que el estilo individualista es mas efectivo y no ha alcanzado a vislumbrar el potencial que se encierra en el trabajo en equipo, no parece aceptar el impacto que en términos de resultados se puede lograr cuando “dos cabezas piensan mejor que una” y “la unión hace la fuerza”.`
+    }
+
+    else if (sumatoria <= 40) {
+        resultHeader = "Va por el buen camino"
+        resultText = `Su puntaje ha sido de ${sumatoria} lo que indica que usted es una persona que sabe que el trabajo en equipo es una buena forma de lograr resultados aunque probablemente aun no haya descubierto todo lo que se puede alcanzar, quizá se sienta temeroso de lo que significa la apertura y la confianza tan necesarios en un buen equipo de trabajo, es posible que hubiese tenido no muy buenas experiencias, lo que lo haya hecho desconfiar de los demás, sin embargo, sabe que es posible lograr grandes cosas. Usted se encuentra cerca de poder desarrollarse como un muy productivo miembro dentro de un equipo, solo necesita aprender a adaptarse y ser flexible, sería conveniente que tomara algún curso de desarrollo referente a la formación de equipos de trabajo.`
+    }
+    else {
+        resultHeader = "Comprometido con el equipo"
+        resultText =  `Su puntaje ha sido de ${sumatoria}. Lo felicito, usted sabe bien como funciona un equipo de trabajo de alto desempeño, sabe cuales son las funciones que deben desempeñar cada uno de los miembros y probablemente ya haya disfrutado de los beneficios de pertenecer a uno, lo que acarrea para cada uno mayor confianza, sentido de pertenencia, aceptación, prestigio y sentido de autorrealización, todo ello hace que usted se sienta motivado a seguir comprometido con su equipo.`
+    }
+
+    return `<h3>${resultHeader}</h3><p>${resultText}</p>`
+
+}
 
 function GetResultNegociacion(sumatoria){
     var resultHeader = "";
