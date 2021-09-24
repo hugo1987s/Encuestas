@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="style.css">
      <title>Encuestas - UTN - LTE</title>
 </head>
-<body>
+<body style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" >
   
     <header class="jumbotron">
         <h1>Test de Liderazgo</h1>
@@ -202,8 +202,9 @@
            
                 <div class="text-center">
                     <br>
-                    <button onclick="Validar()" class="btn btn-primary">Calcular Resultados</button>
-                    <button onclick="Reset()" class="btn btn-secondary">Reiniciar encuesta</button>
+                    <button onclick="Validar(7)" class="btn btn-primary">Calcular Resultados</button>
+                    <button onclick="Reset()" class="btn btn-danger">Reiniciar encuesta</button>
+                    <button onclick="BackHome()" class="btn btn-secondary">Volver al Home</button>
                 </div>
                
                 <br>
@@ -216,7 +217,7 @@
                     <label for="txtEmail"  class="form-label">Email</label>
                     <input type="email" name="txtEmail" id="txtEmail" required class="form-control">
 <br>
-                    <button onclick="Calcular()" class="btn btn-success block" class="form-control">Enviar!</button>
+                    <button onclick="Calcular('Liderazgo')" class="btn btn-success block" class="form-control">Enviar!</button>
 
                 </div>
           

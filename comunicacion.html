@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="style.css">
      <title>Encuestas - UTN - LTE</title>
 </head>
-<body>
+<body style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" >
   
     <header class="jumbotron">
         <h1>Test de Comunicación</h1>
@@ -19,12 +19,13 @@
       <div class="container">
     <section>
 
-<!-- nuevo   
+<!-- nuevo -->   
 <div class="accordion" id="accordionExample">
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           #1 - A la hora de organizar equipos (de trabajo, amigos, etcétera)…
+            <b>#</b>1 - Cuando se trata de compartir mi punto de vista en público…
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -32,25 +33,33 @@
             <ul>
                 <li>
                     <input type="radio" name="A" value="1" id="preg1" class="form-check-input"/>
-                    <label for="preg1">Intento quitarme de en medio para que lo haga otro.</label>
+                    <label for="preg1">  Dejo fluir mis sentimientos e improviso.   </label>
                     
                 </li> 
                 <li>
                     <input type="radio" name="A" value="3" id="preg2" class="form-check-input"/>
-                    <label for="preg2"> Me gusta y creo que se me da bien.</label>
+                    <label for="preg2">  Yo siempre digo lo que pienso donde sea y cuando sea.   </label>
                 </li>
                 <li>
                     <input type="radio" name="A" value="2" id="preg3" class="form-check-input">  
-                    <label for="preg3">Participo en lo que pueda, pero siempre contando con alguna otra persona. </label>
+                    <label for="preg3">  Prefiero no hacerlo para que nadie se sienta ofendido.  </label>
                 </li>
-                </ul>
+                <li>
+                    <input type="radio" name="A" value="4" id="preg4" class="form-check-input">  
+                    <label for="preg4">  Prefiero evitar los conflictos.  </label>
+                </li>
+            </ul>
         </div>
       </div>
     </div>
+
+
+
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          #2 - Cuando tengo que hablar en público (en el trabajo, una fiesta…)
+            <b>#</b>2 - Luego de una discusión acalorada…
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -58,15 +67,19 @@
             <ul>
                 <li>
                     <input type="radio" name="B" value="3" id="preg11" class="form-check-input"/> 
-                    <label for="preg11">En general no me importa y me siento cómodo.</label>
+                    <label for="preg11"> Sigo con mi vida de inmediato. Todos cometemos errores y decimos cosas hirientes a veces. </label>
                 </li> 
                 <li>
                     <input type="radio" name="B" value="1" id="preg12" class="form-check-input"/> 
-                    <label for="preg12">Lo evito por todos los medios.</label>
+                    <label for="preg12"> Me toma tiempo regularme, pero al final recuerdo que las personas son impredecibles.</label>
                 </li>
                 <li>
                     <input type="radio" name="B" value="2" id="preg13" class="form-check-input"/> 
-                    <label for="preg13">Cuando hay que hacerlo lo hago, pero no es algo que me guste.</label>
+                    <label for="preg13"> Me quedo alterado varias horas. Detesto las discusiones, me ponen los nervios de punta.</label>
+                </li>
+                <li>
+                    <input type="radio" name="B" value="4" id="preg14" class="form-check-input"/> 
+                    <label for="preg14"> Me quedo pensando en lo ocurrido durante horas, y en lo injustas que son las personas conmigo.</label>
                 </li>
                 </ul>
         </div>
@@ -75,7 +88,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-         #3 - Cuando estoy en un grupo o reunido con otras personas
+            <b>#</b>3 - Hablar con personas en posición de autoridad…
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -83,15 +96,19 @@
             <ul>
                 <li>
                     <input type="radio" name="C" value="1" id="preg31"  class="form-check-input"/> 
-                    <label for="preg31">Me siento muy incómodo.</label>
+                    <label for="preg31"> Me pone como un toro. No me gusta que me digan lo que tengo que hacer.  </label>
                 </li> 
                 <li>
                     <input type="radio" name="C" value="2"  id="preg32" class="form-check-input"/> 
-                    <label for="preg32">Estoy bien,pero prefiero pasar por desapercibido</label>
+                    <label for="preg32">  No me despierta ningún sentimiento en especial, pero cuido mucho mis palabras.  </label>
                 </li>
                 <li>
                     <input type="radio" name="C" value="3" id="preg33"  class="form-check-input"/> 
-                    <label for="preg33">Me encuentro muy a gusto y me divierto bastante.</label>
+                    <label for="preg33">  Me hace sentir nervioso e inseguro. </label>
+                </li>
+                <li>
+                    <input type="radio" name="C" value="4" id="preg34"  class="form-check-input"/> 
+                    <label for="preg34"> Es una oportunidad para expresar cómo me siento a una persona conocedora del tema.  </label>
                 </li>
                 </ul>
         </div>
@@ -100,7 +117,7 @@
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-           #4 - A la hora de exponer diferentes puntos de vista
+            <b>#</b>4 - Cuando las circunstancias exigen ponerse en contacto con alguna institución gubernamental o entidad oficial…
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -108,15 +125,19 @@
             <ul>
                 <li>
                     <input type="radio" name="D" value="1"  id="preg41" class="form-check-input"/> 
-                    <label for="preg41">Prefiero callarme y escuchar al resto.</label>
+                    <label for="preg41"> Me dejo llevar. No necesito guiones, toda la información viene a mí naturalmente. </label>
                 </li> 
                 <li>
                     <input type="radio" name="D" value="3"  id="preg42" class="form-check-input"/> 
-                    <label for="preg42">Me gusta exponer el mío para ver si así proporciono una nueva visión al grupo.</label>
+                    <label for="preg42">  Hago todas las preguntas que se me ocurren. El problema es que a veces no me entienden. </label>
                 </li>
                 <li>
                     <input type="radio" name="D" value="2"  id="preg43" class="form-check-input"/> 
-                    <label for="preg43">Si algo me parece realmente importante entonces sí digo mi opinión.</label>
+                    <label for="preg43"> Hago una lista de preguntas para no olvidar nada.</label>
+                </li>
+                <li>
+                    <input type="radio" name="D" value="4"  id="preg44" class="form-check-input"/> 
+                    <label for="preg44"> Le pido a alguien más que lo haga (me da miedo no entender nada).</label>
                 </li>
                 </ul>
           </div>
@@ -125,7 +146,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-           #5 - Cuando hago planes con amigos…
+            <b>#</b>5 - Cuando estoy en un grupo y alguien no está de acuerdo conmigo…
           </button>
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -133,15 +154,19 @@
             <ul>
                 <li>
                     <input type="radio" name="E" value="1" id="preg51"  class="form-check-input"/> 
-                    <label for="preg51">Me adapto a lo que me digan.</label>
+                    <label for="preg51">Siempre hay personas que me atacan. Lastimosamente, es algo frecuente en mi vida. </label>
                 </li> 
                 <li>
                     <input type="radio" name="E" value="3" id="preg52"  class="form-check-input"/> 
-                    <label for="preg52">Reconozco que casi siempre hacemos lo que quiero yo.</label>
+                    <label for="preg52">Intervengo para contarle mi historia de vida y enriquecer su perspectiva. </label>
                 </li>
                 <li>
                     <input type="radio" name="E" value="2" id="preg53"  class="form-check-input"/> 
-                    <label for="preg53">Suelo decir mis preferencias, pero frecuentemente hacemos la de otro.</label>
+                    <label for="preg53">Debato sanamente con esa persona (tengo mucha bibliografía memorizada). </label>
+                </li>
+                <li>
+                    <input type="radio" name="E" value="4" id="preg54"  class="form-check-input"/> 
+                    <label for="preg54"> Me quedo callado. No me gustan las discusiones.</label>
                 </li>
                 </ul>
           </div>
@@ -150,7 +175,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-           #6 - Si tengo que organizar un equipo de trabajo…
+            <b>#</b>6 - Cuando comparto con alguien que es muy asertivo y se comunica mejor que yo…
           </button>
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -158,15 +183,19 @@
               <ul>
             <li>
                 <input type="radio" name="F" value="1"  id="preg61" class="form-check-input"/> 
-                <label for="preg61"> Dejo que cada uno elija lo que quiere hacer y lo que sobre lo hago yo.</label>
+                <label for="preg61"> Me siento incómodo y al mismo tiempo me da envidia no poder ser así. </label>
             </li> 
             <li>
                 <input type="radio" name="F" value="2" id="preg62"  class="form-check-input"/> 
-                <label for="preg62"> Reparto tareas según se ha hecho en ocasiones anteriores.</label>
+                <label for="preg62"> Es una experiencia agradable, aunque prefiero a las personas que desnudan su alma y emociones. </label>
             </li>
             <li>
                 <input type="radio" name="F" value="3"  id="preg63" class="form-check-input"/> 
-                <label for="preg63"> Me gusta conocer bien los recursos humanos que tengo para poder asignar a cada uno el trabajo más adecuado a su perfil.</label>
+                <label for="preg63"> Siento alivio, porque así no tengo que hablar. </label>
+            </li>
+            <li>
+                <input type="radio" name="F" value="4"  id="preg64" class="form-check-input"/> 
+                <label for="preg64"> Me siento muy a gusto intercambiando ideas y formas de hacer las cosas. </label>
             </li>
         </ul>
           </div>
@@ -175,7 +204,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-           #7 - En el café o en una charla…
+           <b>#</b>7 - Cuando surge una situación difícil que amerita confrontar a alguien…
           </button>
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -183,15 +212,19 @@
             <ul>
             <li>
                 <input type="radio" name="G" value="3"  id="preg71" class="form-check-input"/> 
-                <label for="preg71"> Reconozco que monopolizo la conversación contando experiencias personales.</label>
+                <label for="preg71"> No lo pienso dos veces. Digo lo que siento sin filtros. </label>
             </li> 
             <li>
                 <input type="radio" name="G" value="2"  id="preg72" class="form-check-input"/> 
-                <label for="preg72"> Cuando me dejan o procede cuento alguna cosa de vez en cuando.</label>
+                <label for="preg72"> Me tomo un tiempo para elegir las palabras correctas. Luego, busco a esa persona. </label>
             </li>
             <li>
                 <input type="radio" name="G" value="1"  id="preg73" class="form-check-input"/> 
-                <label for="preg73"> Puedo irme y es posible que ni se enteren.</label>
+                <label for="preg73"> Prefiero evitar los conflictos. </label>
+            </li>
+            <li>
+                <input type="radio" name="G" value="4"  id="preg74" class="form-check-input"/> 
+                <label for="preg74"> Escribo una carta o un mensaje largo expresando cómo me siento sin herir el otro. </label>
             </li>
         </ul>
           </div>
@@ -199,11 +232,12 @@
       </div>
   </div>
 
--->
+
                 <div class="text-center">
                     <br>
-                    <button onclick="Validar()" class="btn btn-primary">Calcular Resultados</button>
-                    <button onclick="Reset()" class="btn btn-secondary">Reiniciar encuesta</button>
+                    <button onclick="Validar(7)" class="btn btn-primary">Calcular Resultados</button>
+                    <button onclick="Reset()" class="btn btn-danger">Reiniciar encuesta</button>
+                    <button onclick="BackHome()" class="btn btn-secondary">Volver al Home</button>
                 </div>
                
                 <br>
@@ -216,7 +250,7 @@
                     <label for="txtEmail"  class="form-label">Email</label>
                     <input type="email" name="txtEmail" id="txtEmail" required class="form-control">
 <br>
-                    <button onclick="Calcular()" class="btn btn-success block" class="form-control">Enviar!</button>
+                    <button onclick="Calcular('Comunicación')" class="btn btn-success block" class="form-control">Enviar!</button>
 
                 </div>
           
